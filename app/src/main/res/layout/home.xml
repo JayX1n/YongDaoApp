@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/search">
+
+        </SearchView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="22.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2.5dp"
+            android:src="@drawable/help_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:text="求助"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="淡黄"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="浅棕"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@mipmap/line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpager_four"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+
+
+    </LinearLayout>
+ <!--<android.support.v4.view.ViewPager-->
+     <!--android:id="@+id/vp_home"-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="match_parent"-->
+     <!--android:layout_below="@+id/header">-->
+     <!--<android.support.v4.view.PagerTitleStrip-->
+         <!--android:id="@+id/pagertitle"-->
+         <!--android:layout_width="wrap_content"-->
+         <!--android:layout_height="40dp"-->
+         <!--&gt;</android.support.v4.view.PagerTitleStrip>-->
+
+ <!--</android.support.v4.view.ViewPager>-->
+
+
+</LinearLayout>
